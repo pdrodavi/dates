@@ -18,7 +18,7 @@ public class StartController {
     @Autowired
     DiaUtilService diaUtilService;
 
-    @GetMapping(value = "/check-data-util/{data}")
+    @GetMapping(value = "/check-day/{data}")
     public Dia checkDia(@PathVariable("data") String req) throws ParseException {
 
         if (req.length() != 8){
